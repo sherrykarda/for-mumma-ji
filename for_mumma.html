@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>💐 Love for My Mumma 💐</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fff0f5, #ffe6f0);
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      text-align: center;
+      padding: 40px;
+      color: #d1006e;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #ff1493;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4;
+      }
+      to {
+        text-shadow: 0 0 20px #ff1493, 0 0 30px #ff69b4;
+      }
+    }
+
+    .message-box {
+      background: #fff;
+      padding: 20px;
+      margin: 30px auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #ffc0cb;
+      width: 70%;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .footer {
+      font-size: 18px;
+      margin-top: 40px;
+      color: #c71585;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💐 To My Lovely Mumma 💐</h1>
+
+  <div class="message-box" id="message">
+    Click the button below to start my love story for you, Mumma 🥺💖
+  </div>
+
+  <button onclick="showNext()">Show Me Love 💋</button>
+
+  <div class="footer">💋💋💋 From your pyaari bacchi 💋💋💋</div>
+
+  <script>
+    const messages = [
+      "💖 Mumma jii this is specialy for you.. 🌞🌙",
+     "👩‍👧 tusi mere li booooo jada special ow.. 💋",
+     "🍰 Your hugs heal everything 🥺💞",
+      "👑 You're the queen of our home 👸 and of my heart 💖",
+      "✨ Apke bina sab kuch adhoora lagta hai 😭",
+     "🌈 You made my world colorful with your love 💕",
+     "💗 I'm proud to be your little baby forever 😚",
+     "🎀 Thank you for loving me when I was unlovable ✨💕",
+      "💋 I love you sooo much Mumma jii, now and always 💖",
+     "💐 Rabb tohanu hamesha khush rkhe 🙏💗"
+   ];
+
+    let index = 0;
+
+    function showNext() {
+      const box = document.getElementById("message");
+      if (index < messages.length) {
+        box.innerHTML = messages[index];
+        index++;
+      } else {
+        box.innerHTML = "💘 That's all, but my love for you never ends... 🥹💋";
+      }
+    }
+  </script>
+
+</body>
+</html>
